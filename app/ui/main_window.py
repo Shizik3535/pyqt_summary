@@ -141,7 +141,6 @@ class MainWindow(QWidget):
 
             # Создаём безопасное имя атрибута
             attr_name = f"{self.safe_attr_name(op_name)}_button"
-            print(attr_name)
             setattr(self, attr_name, radio_button)
 
             # Раскладка по строкам и столбцам

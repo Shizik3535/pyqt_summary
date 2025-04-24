@@ -88,12 +88,14 @@ INSERT INTO children (name, birth_date, staff_id) VALUES
 ('Дмитрий Сидоров', '2014-07-10', 3);
 
 INSERT INTO type_operation (name) VALUES
-('Расчёт налоговой базы'),
-('Расчёт НДФЛ');
+('Налоговая база'),
+('НДФЛ'),
+('Льготы');
 
 INSERT INTO type_payment (name, percent) VALUES
 ('Наличие ребёнка', 13.00),
-('Наличие ветеранства', 10.00);
+('Наличие ветеранства', 10.00),
+('Наличие ребёнка инвалида', 15.00);
 
 
 DELIMITER $$

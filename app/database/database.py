@@ -1,4 +1,4 @@
-import MySQLdb as mdb
+import pymysql as mdb
 import sys
 
 # Подключение к базе данных
