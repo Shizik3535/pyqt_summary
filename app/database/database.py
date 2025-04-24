@@ -63,6 +63,19 @@ class DB:
             return []
 
     @classmethod
+    def get_type_benefits(cls):
+        try:
+            with db.cursor() as cursor:
+                cursor.execute(
+                    "SELECT * FROM type_payment"
+                )
+                type_benefits = cursor.fetchall()
+            return type_benefits
+        except mdb.Error as e:
+            print("Ошибка получения типов операций:", e)
+            return []
+
+    @classmethod
     def calculate_result(cls, staff_id: int, tax_base: bool, ndfl: bool, veteran: bool, children: bool):
         try:
             with db.cursor() as cursor:
